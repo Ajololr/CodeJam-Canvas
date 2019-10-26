@@ -1,35 +1,124 @@
 body {
   width: 100%;
+  height: 900px;
   max-width: 1440px;
   margin: 0 auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.menu_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+  &--hamburger_menu {
+    width: 18px;
+    height: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    &-item {
+      height: 20%;
+      background: rgba(0, 0, 0, 0.54);
+    }
+  }
+  &--logo {
+    width: 90%;
+    text-align: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin-left: 30px;
+  }
+  &--dots_menu {
+    width: 18px;
+    height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    &-item {
+      height: 4px;
+      width: 4px;
+      background: rgba(0, 0, 0, 0.54);
+      border-radius: 50%;
+    }
+  }
 }
 
 .interface_wrapper {
-  height: 900px;
+  height: 850px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-content: space-around;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
   &--instruments,
-  &--colors {
+  &--colors,
+  &--sizes {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     list-style: none;
-    width: 226px;
+    color: rgba(0, 0, 0, 0.541327);
+    width: 228px;
     height: auto;
-    margin-top: 60px;
-    box-shadow: 1px black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+    padding: 0;
     &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       height: 50px;
-      border: 1px solid gray;
+      padding: 0 25px;
       cursor: pointer;
+      &:hover {
+        background-color: lightgray;
+      }
+      &-color {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 50%;
+      }
+    }
+    &-divider {
+      height: 1px;
+      background: rgba(0, 0, 0, 0.12);
     }
   }
   &--canvas_element {
     width: 512px;
     height: 512px;
+    margin: 100px 0;
     border: 1px solid black;
   }
 }
 
+#Current_color {
+  background: #C4C4C4;
+}
+
+#Prev_color {
+  background: #41F795;
+}
+
+#red {
+  background: #F74141;
+}
+
+#blue {
+  background: #41B6F7;
+}
