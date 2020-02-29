@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+<body>
+  <header class="menu_wrapper">
+    <ul class="menu_wrapper--hamburger_menu">
+      <li class="menu_wrapper--hamburger_menu-item"></li>
+      <li class="menu_wrapper--hamburger_menu-item"></li>
+      <li class="menu_wrapper--hamburger_menu-item"></li>
+    </ul>
+    <h1 class="menu_wrapper--logo">CodeJam - Pallete</h1>
+    <ul class="menu_wrapper--dots_menu">
+      <li class="menu_wrapper--dots_menu-item"></li>
+      <li class="menu_wrapper--dots_menu-item"></li>
+      <li class="menu_wrapper--dots_menu-item"></li>
+    </ul>
+  </header>
+  <main class="interface_wrapper">
+    <ul class="interface_wrapper--instruments">
+      <li class="interface_wrapper--instruments-item"><img src="assets/images/bucket-icon.svg" alt="bucket"><span>Paint bucket</span></li>
+      <li class="interface_wrapper--instruments-item"><img src="assets/images/pipet-icon.svg" alt="pipet"><span>Choose color</span></li>
+      <div class="interface_wrapper--instruments-divider"></div>
+      <li class="interface_wrapper--instruments-item"><img src="assets/images/move-icon.svg" alt="move"><span>Move</span></li>
+      <li class="interface_wrapper--instruments-item"><img src="assets/images/transform-icon.svg" alt="transform"><span>Transform</span></li>
+    </ul>
+    <ul class="interface_wrapper--colors">
+      <li class="interface_wrapper--colors-item">
+        <div class="interface_wrapper--colors-item-color" id="Current_color"></div>
+        <span>Current color</span>
+      </li>
+      <li class="interface_wrapper--colors-item">
+        <div class="interface_wrapper--colors-item-color" id="Prev_color"></div>
+        <span>Prev color</span>
+      </li>
+      <div class="interface_wrapper--colors-divider"></div>
+      <li class="interface_wrapper--colors-item">
+        <div class="interface_wrapper--colors-item-color" id="red"></div>
+        <span>red</span>
+      </li>
+      <li class="interface_wrapper--colors-item">
+        <div class="interface_wrapper--colors-item-color" id="blue"></div>
+        <span>blue</span>
+      </li>
+    </ul>
+    <canvas class="interface_wrapper--canvas_element" id="canvas"></canvas>
+    <ul class="interface_wrapper--sizes">
+      <li class="interface_wrapper--sizes-item" id="draw_4x4"><span>4x4</span></li>
+      <li class="interface_wrapper--sizes-item" id="draw_32x32"><span>32x32</span></li>
+      <div class="interface_wrapper--sizes-divider"></div>
+      <li class="interface_wrapper--sizes-item" id="draw_image"><span>Image</span></li>
+    </ul>
+    <script src="script.js"></script>
+  </main>
+</body>
+</html>
